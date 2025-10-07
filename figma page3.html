@@ -10,13 +10,18 @@
     <link rel="stylesheet" href="e-commerce.css">
 </head>
 <body>
+  <div class="color">
     <header class="main-header">
     <div class="container">
         <div class="flex items-center w-full wrapper">
             <div class="w-20 logo">
+               <div class="mob-meun-icon">
+                    <svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg>
+                  </div>
                 <img src="images/logo.png" alt="logo" />
             </div>
             <div class="w-60">
+               <div class="header-nav">
                 <nav>
                     <ul class="flex justify-center">
                         <li>
@@ -39,6 +44,7 @@
                         </li>
                     </ul>
                 </nav>
+                </div>
             </div>
             <div class="w-20">
                 <div class="flex justify-end icons">
@@ -50,8 +56,9 @@
         </div>
     </div>
    </header>
+   </div>
 
-  <section class="section">
+  <!--section class="section">
     <div class="container">
         <div class="product-detail flex">
         <div class="boy-images w-50 flex">
@@ -61,10 +68,16 @@
                 <img src="images/boy 3.png" alt="boy3" />
                 <img src="images/boy 4.png" alt="boy4" />
             </div>
-            <div class="main-img">
-                <img src="images/Mask.png" alt="main-boy" />
-            </div>
-            </div>
+            <div class="product-image">
+          <img src="images/Mask.png" alt="Main Product">
+          <div class="product-icons flex">
+            <button class="search">
+              <img src="images/zoom.png" alt="zoom" />
+            </button>
+          </div>
+          <button class="arrow  flex items-center justify-center left"><img src="images/left-arrow.png" alt="Previous"></button>
+          <button class="arrow  flex items-center justify-center right"><img src="images/right-arrow.png" alt="Next"></button>
+        </div>
         
         <div class="product-info w-50">
             <div class="SKU flex">
@@ -85,9 +98,9 @@
                 <p class="active">(4.0) 8 reviews</p>
             </div>
 
-            <div class="colors flex item-center">
+            <div class="colors flex items-center">
           <p class="info-line">Colors:</p>
-          <div class="color-options flex item-center">
+          <div class="color-options flex items-center">
             <span class="color-box circle1 selected"></span>
             <span class="color-box circle2"></span>
             <span class="color-box circle3"></span>
@@ -104,7 +117,7 @@
                 <span>100% Polyester</span>
             </div>
         
-        <div class="cart-actions flex item-center">
+        <div class="cart-actions flex items-center">
           <div class="quantity flex justify-content item-center">
             <span class="minus">-</span>
             <span class="number">01</span>
@@ -113,7 +126,7 @@
           <button class="btn add">Add To Cart</button>
         </div>
 
-        <div class="agree flex item-center">
+        <div class="agree flex items-center">
           <input type="checkbox" id="terms">
           <label for="terms">I Agree With The Terms And Conditions</label>
         </div>
@@ -179,7 +192,136 @@
           </div>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
         </div>
-    </section>
+    </section>-->
+    <div class="page-bg">
+    <div class="container">
+      <!-- === Product Section === -->
+      <section class="product-section flex">
+
+        <!-- Left Column (10%) -->
+        <div class="product-thumbs w-10">
+          <img src="images/boy 1.png" alt="boy 1" />
+          <img src="images/boy 2.png" alt="Thumb 2" />
+          <img src="images/boy 3.png" alt="Thumb 3" />
+          <img src="images/boy 4.png" alt="Thumb 4" />
+        </div>
+        
+
+        <div class="product-image">
+          <img src="images/Mask.png" alt="Main Product">
+          <div class="product-icons flex">
+            <button class="search">
+              <img src="images/Vector 1.png" alt="zoom" />
+            </button>
+          </div>
+          <button class="arrow  flex items-center justify-center left"><img src="images/left-arrow.png" alt="Previous"></button>
+          <button class="arrow  flex items-center justify-center right"><img src="images/Arrow.png" alt="Next"></button>
+        </div>
+
+        <div class="product-info w-50">
+          <p class="info-line">SKU: <span class="gray">2231</span></p>
+          <p class="info-line">Availability: <span class="gray2">1 in stock</span></p>
+          <h1 class="title">Premier Quality Polo Shirt</h1>
+          <h3 class="price">$385.00</h3>
+          <p class="tax">Tax included</p>
+
+          <div class="rating flex item-center">
+            <img src="images/star-1.png" alt="Stars">
+            <a href="#" class="reviews">(4.0) 8 Reviews</a>
+          </div>
+          <div class="colors flex item-center">
+            <p class="info-line">Colors:</p>
+            <div class="color-options flex item-center">
+              <span class="color-box circle1 selected"></span>
+              <span class="color-box circle2"></span>
+              <span class="color-box circle3"></span>
+              <span class="color-box circle4"></span>
+            </div>
+          </div>
+          <p class="info-line">Sizes: <span class="gray">20, 24</span></p>
+          <p class="info-line">Material:<span class="gray3">100% Polyester</span></p>
+
+          <!-- Quantity + Add to Cart -->
+          <div class="cart-actions flex item-center">
+            <div class="quantity flex justify-between item-center">
+              <span class="minus">-</span>
+              <span class="number">01</span>
+              <span class="plus">+</span>
+            </div>
+            <button class="btn add">Add To Cart</button>
+          </div>
+
+          <div class="agree flex item-center">
+            <input type="checkbox" id="terms">
+            <label for="terms">I Agree With The Terms And Conditions</label>
+          </div>
+          <button class="btn buy">Buy It Now</button>
+        </div>
+      </section>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- === Description & Reviews === -->
+
+      <section class="desc-reviews flex">
+
+        <!-- Description -->
+        <div class="description w-50">
+          <h2>Descriptions</h2>
+          <p>We are proud to present our best premium Shopify theme.</p>
+          <p>This is multipurpose software that can be used for any type of the store.
+          Great variety of available options will make customization process very easy.</p>
+          <p>Please, take a look at feature list and compare with our competitors.</p>
+          <p>You can buy our theme and start your business online with minimal time investments.</p>
+          <p class="margin">E-Commerce support DropShipping app Oberlo.</p>
+          <p>E-Commerce Shopify theme is powerfool tool to create personal webshop.</p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews w-50">
+          <div class="flex justify-between item-center">
+            <h2 class="ra">Reviews</h2>
+            <a href="#" class="write-review">Write A Review</a>
+          </div>
+
+          <div class="review-item">
+            <div class="flex item-center ">
+              <img src="images/image 1.png" alt="User">
+              <div>
+                <h4>Albert Flores</h4>
+                <img src="images/star-1.png" alt="Stars" class="color">
+              </div>
+              <span class="review-time">01 day ago</span>
+            </div>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+          </div>
+
+          <div class="review-item">
+            <div class="flex item-center">
+              <img src="images/image 2.png" alt="User">
+              <div>
+                <h4>Brooklyn Simmons</h4>
+                <img src="images/star-2.png" alt="Stars" class="color">
+              </div>
+              <span class="review-time">01 day ago</span>
+            </div>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+          </div>
+
+          <div class="review-item">
+            <div class="flex item-center">
+              <img src="images/image 3.png" alt="User">
+              <div>
+                <h4>Brooklyn Simmons</h4>
+                <img src="images/star-3.png" alt="Stars" class="color">
+              </div>
+              <span class="review-time">01 day ago</span>
+            </div>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+          </div>
+        </div>
+      </section>
 
     <section class="related">
         <div class="container">
@@ -191,14 +333,14 @@
       </div>
     </div>
 
-      <div class="flex justify-content item-center">
+      <div class="flex justify-content items-center">
       <!-- Product-1 -->
             <div class="product">
               <div class="prd-img-wrap">
                 <img src="images/seller-1.png" alt="Seller1" class="main-img" />
                  <div class="options">
               <button class="search">
-                <img src="images/search.png" alt="search">
+                <img src="images/zoom.png" alt="search">
               </button>
               <button class="cart">
                 <img src="images/cart.png" alt="cart">
@@ -216,7 +358,7 @@
                 <img src="images/seller-2.png" alt="Seller2" class="main-img" />
                  <div class="options">
               <button class="search">
-                <img src="images/search.png" alt="search">
+                <img src="images/zoom.png" alt="search">
               </button>
               <button class="cart">
                 <img src="images/cart.png" alt="cart">
@@ -234,7 +376,7 @@
                 <img src="images/seller-3.png" alt="Seller3" class="main-img" />
                  <div class="options">
               <button class="search">
-                <img src="images/search.png" alt="search">
+                <img src="images/zoom.png" alt="search">
               </button>
               <button class="cart">
                 <img src="images/cart.png" alt="cart">
@@ -252,7 +394,7 @@
                 <img src="images/seller-4.png" alt="Seller4" class="main-img" />
                  <div class="options">
               <button class="search">
-                <img src="images/search.png" alt="search">
+                <img src="images/zoom.png" alt="search">
               </button>
               <button class="cart">
                 <img src="images/cart.png" alt="cart">
@@ -266,6 +408,7 @@
             </div>
       </div>
       </section>
+      <div class="grey-color"></div>
       <!--footer start-->
     <footer class="footer">
     <div class="container">
